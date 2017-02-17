@@ -12,6 +12,8 @@ public class MainApp {
 		//obj.setMessage("Hi this message is send from MainApp\n");
 		System.out.println(obj.getMessage());
 		context.registerShutdownHook();
+		//adding a new comment.
+		//this is present in new_master
 	
 	}
 }
