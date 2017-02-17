@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!--This is the simple definition of bean -->
+	<!-- <bean id="helloSpring"	class="com.tutorial.spring.HelloSpring">
+		<property name="message"	value="Hello Spring!!" />
+	</bean> -->
+	
+	<!-- This is the definition of lazy initialization of bean -->
+	<!-- <bean id="helloSpring"	class="com.tutorial.spring.HelloSpring"	lazy-init="true">
+		<property name="message"	value="Hello Spring its lazy-initialization"/>
+	</bean> -->
+	
+	<!-- Bean definition with initialization method -->
+	<bean id="helloSpring1"	class="com.tutorial.spring.HelloSpring"	init-method="initIt" scope="singleton" destroy-method="destroy">
+		<property name="message"	value="Hello Spring!! "/>
+	</bean> 
+	
+	<!-- Bean defnition with destroy method  -->
+	<!-- <bean id="helloSpring3"	class="com.tutorial.spring.HelloSpring" destroy-method="cleanUp">
+		<property name="message"	value="Hi, I am property method"/>
+	</bean> -->
+</beans>
